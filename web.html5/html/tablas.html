@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <header>
+     <h1>HTML Tables</h1>
+    </header>
+    
+
+<main>
+   <p>-HTML tables allow web developers to arrange data into rows and columns.</p>
+
+    <section>
+        <h2>Table cells:</h2>
+        <article>
+            <p>Each table cell is defined by a &lt;td&gt; and a &lt;td&gt; tag</p>
+            <p>Everything between those tags are the content of the table cell</p>
+            <p>For example:</p>
+            <table style="width:100%">
+                <tr>
+                  <td>Emil</td>
+                  <td>Tobias</td>
+                  <td>Linus</td>
+                </tr>
+              </table>
+              <p>A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc.</p>
+        </article>
+       
+    </section>
+    <section>
+        <h2>Table rows:</h2>
+        <p>&lt;Tr&gt; stands for table row.</p>
+        <article>
+            <p>We can have as many rows as we like in a table, but we have to make sure that the number of the cells are the same in each row</p>
+            <p>A example would be:
+                <table style="width:100%">
+                    <tr>
+                      <td>Emil</td>
+                      <td>Tobias</td>
+                      <td>Linus</td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td>14</td>
+                      <td>10</td>
+                    </tr>
+                  </table>                
+            </p>
+        </article>
+    </section>
+    <section>
+        <h2>Table headers:</h2>
+        <article>
+            <p>If you want to add in your table a header cell use &lt;th&gt; instead of &lt;td&gt;</p>
+            <p>For example:</p>
+            <table style="width:100%">
+                <tr>
+                  <th>Person 1</th>
+                  <th>Person 2</th>
+                  <th>Person 3</th>
+                </tr>
+                <tr>
+                  <td>Emil</td>
+                  <td>Tobias</td>
+                  <td>Linus</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>14</td>
+                  <td>10</td>
+                </tr>
+              </table>
+        </article>
+    </section>
+    <section>
+        <h2>Caption method</h2>
+        <article>
+            <p>We can give ur table a caption by putting it inside a &lt;caption&gt; element and nesting that inside the &lt;table&gt; element</p>
+            <p>For example:</p>
+            <table>
+                <caption>
+                  Dinosaurs in the Jurassic period
+                </caption>
+              
+                …
+              </table>
+            <p>The caption is meant to contain a description of the table contents</p>
+            <p>A caption is placed directly beneath the &lt;table&gt; tag.</p>
+        </article>
+    </section>
+    <section>
+        <h2>Table borders</h2>
+        <article>
+            <p>To specify table borders in CSS, use the border property</p>
+            <p>An example would be like:</p>
+            <table>
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                </tr>
+                <tr>
+                  <td>Peter</td>
+                  <td>Griffin</td>
+                </tr>
+                <tr>
+                  <td>Lois</td>
+                  <td>Griffin</td>
+                </tr>
+              </table>
+        </article>
+    </section>
+    <section>
+        <h2>Full-Width Table</h2>
+        <article>
+            <p>If you need a table that should span the entire screen (full-width), add width: 100% to the &lt;table&gt; element</p>
+        </article>
+    </section>
+    <section>
+        <h2>Collapse table borders </h2>
+        <article>
+        <p>The border-collapse property sets whether the table borders should be collapsed into a single border</p>
+        <p>If we only want a border around the table, only specify the border property for &lt;table&gt;</p>
+        </article>
+    </section>
+</main>      
+    </body>
+</html>
